@@ -31,6 +31,19 @@ public class Bedroom extends Room{
         return carpet;
     }
 
+    public void createBedroom(){
+        super.getWall1().create();
+        super.getWall2().create();
+        super.getWall3().create();
+        super.getWall4().create();
+        super.getCeiling().create();
+
+        bed.make();
+        getCarpet().lying();
+        wardrobe.add();
+        super.getLamp().turnOn();
+    }
+
     @Override
     public String toString() {
         return "Bedroom{" +
