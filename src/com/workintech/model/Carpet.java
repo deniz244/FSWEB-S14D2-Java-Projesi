@@ -1,11 +1,13 @@
-package oop.workintech.models;
+package com.workintech.model;
 
-public class Wardrobe {
+import com.workintech.enums.PaintColor;
+
+public class Carpet {
     private int width;
     private int height;
     private PaintColor color;
 
-    public Wardrobe(int width, int height, PaintColor color) {
+    public Carpet(int width, int height, PaintColor color) {
         this.width = width;
         this.height = height;
         this.color = color;
@@ -23,7 +25,7 @@ public class Wardrobe {
         return color;
     }
 
-    public void add(){
-        System.out.println("Wardrobe added into Bedroom.");
+    public void lying(){
+        System.out.println("Carpet is lying on Bedroom floor.");
     }
 }

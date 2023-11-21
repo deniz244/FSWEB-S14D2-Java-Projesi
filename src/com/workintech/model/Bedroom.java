@@ -1,4 +1,4 @@
-package oop.workintech.models;
+package com.workintech.model;
 
 public class Bedroom {
     private String name;

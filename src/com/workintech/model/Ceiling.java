@@ -1,4 +1,6 @@
-package oop.workintech.models;
+package com.workintech.model;
+
+import com.workintech.enums.PaintColor;
 
 public class Ceiling {
 

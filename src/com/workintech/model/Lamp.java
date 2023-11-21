@@ -1,4 +1,6 @@
-package oop.workintech.models;
+package com.workintech.model;
+
+import com.workintech.enums.LampType;
 
 public class Lamp {
     private boolean battery;
@@ -11,10 +13,6 @@ public class Lamp {
         this.style = style;
     }
 
-     public void turnOn(){
-         System.out.println("Lamp is being turned on.");
-    }
-
     public LampType getStyle(){
         return style;
     }
@@ -25,5 +23,8 @@ public class Lamp {
 
     public int getGlobRating(){
         return globRating;
+    }
+    public void turnOn(){
+        System.out.println("Lamp is being turned on.");
     }
 }

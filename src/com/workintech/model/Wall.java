@@ -1,4 +1,4 @@
-package oop.workintech.models;
+package com.workintech.model;
 
 public class Wall {
     private String direction;

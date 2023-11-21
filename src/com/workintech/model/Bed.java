@@ -1,4 +1,4 @@
-package oop.workintech.models;
+package com.workintech.model;
 
 public class Bed {
     private int pillows;
