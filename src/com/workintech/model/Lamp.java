@@ -26,5 +26,15 @@ public class Lamp {
     }
     public void turnOn(){
         System.out.println("Lamp is being turned on.");
+        // sout içine -> String.format("Lamp is being turned on. %d", globRating);
+    }
+
+    @Override
+    public String toString() {
+        return "Lamp{" +
+                "battery=" + battery +
+                ", globRating=" + globRating +
+                ", style=" + style +
+                '}';
     }
 }

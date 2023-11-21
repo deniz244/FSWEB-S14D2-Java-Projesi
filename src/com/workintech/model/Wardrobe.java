@@ -5,12 +5,12 @@ import com.workintech.enums.PaintColor;
 public class Wardrobe {
     private int width;
     private int height;
-    private PaintColor color;
+    private double weight;
 
-    public Wardrobe(int width, int height, PaintColor color) {
+    public Wardrobe(int width, int height, double weight) {
         this.width = width;
         this.height = height;
-        this.color = color;
+        this.weight = weight;
     }
 
     public int getWidth() {
@@ -21,11 +21,20 @@ public class Wardrobe {
         return height;
     }
 
-    public PaintColor getColor() {
-        return color;
+    public double getWeight() {
+        return weight;
     }
 
     public void add(){
         System.out.println("Wardrobe added into Bedroom.");
+    }
+
+    @Override
+    public String toString() {
+        return "Wardrobe{" +
+                "width=" + width +
+                ", height=" + height +
+                ", weight=" + weight +
+                '}';
     }
 }

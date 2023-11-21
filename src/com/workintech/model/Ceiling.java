@@ -21,7 +21,14 @@ public class Ceiling {
     }
 
     public void create(){
-        System.out.println(height);
-        System.out.println(paintedColor);
+        System.out.println("Height: " + height + " color: " + paintedColor.name());
+    }
+
+    @Override
+    public String toString() {
+        return "Ceiling{" +
+                "height=" + height +
+                ", paintedColor=" + paintedColor +
+                '}';
     }
 }
